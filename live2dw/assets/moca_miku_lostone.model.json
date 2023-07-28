@@ -1,0 +1,9 @@
+{
+  "type": 0,
+  "model": "moca_miku_lostone.moc",
+  "textures": [
+    "moca_miku_lostone.1024/texture_00.png"
+  ],
+  "physics":"moca_miku_lostone.physics",
+  "physics_v2": {}
+}
