@@ -23,10 +23,13 @@
 <meta property="og:site_name" content="绯想天">
 <meta property="og:description" content="生命不息，折腾不止">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://noslolikon.github.io/2023/07/28/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE/theme_path.png">
+<meta property="og:image" content="https://noslolikon.github.io/2023/07/28/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE/live2d_full_path.png">
 <meta property="article:published_time" content="2023-07-28T08:59:12.000Z">
-<meta property="article:modified_time" content="2023-07-28T10:10:20.000Z">
+<meta property="article:modified_time" content="2023-07-28T10:21:58.000Z">
 <meta property="article:author" content="上游一号">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://noslolikon.github.io/2023/07/28/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE/theme_path.png">
   
   <!-- 站点验证相关 -->
   
@@ -155,7 +158,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~3.53K
+                        ~3.52K
                     
                     字
                 </li>
@@ -166,7 +169,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1690539020000"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1690539718000"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -181,7 +184,7 @@
 <p>随后在该位置hexo s即可启动服务<br>使用浏览器访问127.0.0.1:4000即可看到站点成功启动</p>
 <h2 id="part-2-hexo主题"><a href="#part-2-hexo主题" class="headerlink" title="part.2 hexo主题"></a>part.2 hexo主题</h2><blockquote>
 <h4 id="默认主题很有感觉，但是作为自己的站点应该更加符合自己的个性"><a href="#默认主题很有感觉，但是作为自己的站点应该更加符合自己的个性" class="headerlink" title="默认主题很有感觉，但是作为自己的站点应该更加符合自己的个性"></a>默认主题很有感觉，但是作为自己的站点应该更加符合自己的个性</h4></blockquote>
-<p>hexo官方也提供了官方的主题网站，这里我选择Kratos-Rebirth，为什么？，因为<span class="blur">足够二次元！</span><br>从gayhub中拷贝项目并放入站点的hexo文件夹内，就像这样{}<br>然后编辑站点根目录的_config.yml文件<br>将<code>theme: landspace</code>改为<code>theme: kratos-rebirth</code><br>重启服务，就能看到主题成功配置</p>
+<p>hexo官方也提供了官方的主题网站，这里我选择Kratos-Rebirth，为什么？，因为<span class="blur">足够二次元！</span><br>从gayhub中拷贝项目并放入站点的hexo文件夹内，就像这样<img src="/2023/07/28/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE/theme_path.png" class="" title="完整路径"><br>然后编辑站点根目录的_config.yml文件<br>将<code>theme: landspace</code>改为<code>theme: kratos-rebirth</code><br>重启服务，就能看到主题成功配置</p>
 <hr>
 <p>（下面都是针对kratos-rebirth主题说明）<br>虽然这个主题已经很不错了，但是二次元的浓度依然不够，我们可以通过对主题进行小小的修改<br>下面是一些可选的配置，代码不连续</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">site_logo: &#x27;&#x27; #站点标签页上的logo</span><br><span class="line"></span><br><span class="line">ustomStyles:</span><br><span class="line">  images: # 图片相关设置</span><br><span class="line">    banner: /images/banner.webp # 首页的最大的图片</span><br><span class="line">    background: /images/bg.webp # 站点整体的背景图片</span><br><span class="line"></span><br><span class="line"># Top Menu 顶部导航栏配置 （具体格式请参照官方文档）</span><br><span class="line">menu:</span><br><span class="line">  index: /</span><br><span class="line">  archives: /archives/</span><br><span class="line">label:</span><br><span class="line">  index: &lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;首页</span><br><span class="line">  archives: &lt;i class=&quot;fa fa-file&quot;&gt;&lt;/i&gt;档案馆</span><br><span class="line">#我比较喜欢简单，都删干净了，就留了两个</span><br><span class="line"></span><br><span class="line"># APlayer 左下角音乐播放器</span><br><span class="line">aplayer:</span><br><span class="line">  enabled: true</span><br><span class="line">  playlist: </span><br><span class="line">  meting:</span><br><span class="line">    server: netease</span><br><span class="line">    type: playlist</span><br><span class="line">    id: 8034586413</span><br><span class="line">  order: random</span><br><span class="line">#id来自网易云音乐网页版，网页登陆后查看歌单，url栏中最后的几个数字就是这里填的id，需要注意的是，共享歌单应该设置为公开而非私密</span><br><span class="line"></span><br><span class="line">avatarUri: /images/avatar.webp #网站侧栏的头像</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -192,7 +195,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save live2d-widget-model-wanko</span><br></pre></td></tr></table></figure>
 <p>为你的_config.yml添加live2d相关配置</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"># live2d</span><br><span class="line"># https://github.com/EYHN/hexo-helper-live2d</span><br><span class="line">live2d:</span><br><span class="line">  enable: true # 是否启用看板娘</span><br><span class="line">  scriptFrom: local # 默认</span><br><span class="line">  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)，自动生成</span><br><span class="line">  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径</span><br><span class="line">  pluginModelPath: assets/ # 模型文件相对与插件根目录路径</span><br><span class="line">  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中，具体见项目github描述</span><br><span class="line">  debug: false # 调试, 是否在控制台输出日志</span><br><span class="line">  model:</span><br><span class="line">    use: ./live2d_models/live2d-widget-model-moca-lostone # live2d模型的名字</span><br><span class="line">    scale: 1.4</span><br><span class="line">    hHeadPos: 0.5</span><br><span class="line">    vHeadPos: 0.618</span><br><span class="line">  display:</span><br><span class="line">    superSample: 4</span><br><span class="line">    width: 200</span><br><span class="line">    height: 400</span><br><span class="line">    position: right # 左侧还是右侧</span><br><span class="line">    hOffset: 20</span><br><span class="line">    vOffset: -50 # 距底部距离</span><br><span class="line">  mobile:</span><br><span class="line">    show: false # 手机端是否可见</span><br><span class="line">    scale: 0.5</span><br><span class="line">  react:</span><br><span class="line">    opacityDefault: 0.7</span><br><span class="line">    opacityOnHover: 0.2</span><br></pre></td></tr></table></figure>
-<p>如果你是一个有追求的<span class="blur">二刺螈</span>，想用自定义的live2d，应该怎么办？<br>很简单，在hexo站点的根目录下新建一个名为live2d_models的文件夹，里面再新建一个文件夹，这个是你的模型文件夹，模型文件存在这里，例如<br>hexo&#x2F;live2d_models&#x2F;live2d-widget-model-moca-lostone<br>最终路径应该如图<br>{}<br>live2d-widget-model-moca-lostone这个文件夹里应该是你的live2d模型文件，通常包括</p>
+<p>如果你是一个有追求的<span class="blur">二刺螈</span>，想用自定义的live2d，应该怎么办？<br>很简单，在hexo站点的根目录下新建一个名为live2d_models的文件夹，里面再新建一个文件夹，这个是你的模型文件夹，模型文件存在这里，例如<br>hexo&#x2F;live2d_models&#x2F;live2d-widget-model-moca-lostone<br>最终路径应该如图</p>
+<img src="/2023/07/28/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE/live2d_full_path.png" class="" title="完整路径">
+<p>live2d-widget-model-moca-lostone这个文件夹里应该是你的live2d模型文件，通常包括</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xxxx.json</span><br><span class="line">xxxx.moc</span><br><span class="line">xxxx.physics</span><br><span class="line">一张模型贴图或者在文件夹里的模型贴图.jpg</span><br></pre></td></tr></table></figure>
 <p>一部分情况下，你的模型可能会没有json文件，此时你就需要准备一个live2d软件了，例如（在steam上的Live2dViewEX）<br>创建项目，将相关文件都拖进去即可，软件会帮你生产json文件<br>如果还是没有的话，就自己新建一个文本文档并填入以下内容，修改后缀为json</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;type&quot;: 0,</span><br><span class="line">  &quot;model&quot;: &quot;moca_miku_lostone.moc&quot;,</span><br><span class="line">  &quot;textures&quot;: [</span><br><span class="line">    &quot;moca_miku_lostone.1024/texture_00.png&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;physics&quot;:&quot;moca_miku_lostone.physics&quot;,</span><br><span class="line">  &quot;physics_v2&quot;: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -286,7 +291,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-07-28T10:10:20.000Z" itemprop="dateModified">最后编辑：2023-07-28</time>
+                    <time datetime="2023-07-28T10:21:58.000Z" itemprop="dateModified">最后编辑：2023-07-28</time>
                 </div>
             </div>
         </footer>
